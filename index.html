@@ -6,20 +6,25 @@
                 background-color: azure;
             }
             img{
-                width: 100%;
-                height: 100%;
+                width: 95%;
+                height: 60%;
+                border-radius: 15px;
+                padding: 6px;
             }
             .boxes.spaced {
                 display: flex;
-                justify-content: flex-end;
-                gap: 7px;
+                justify-content: space-around;
+                gap: 15px;
             }
             .box {
                 height: 300px;
                 width: 250px;
                 background-color: gainsboro;
-                border-radius: 10px;
+                border-radius: 15px;
                 
+            }
+            .producttext {
+                text-align: center;
             }
         </style>
     </head>
@@ -28,14 +33,36 @@
         <div class="boxes spaced">
             <div class="box">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz7uzwXTsKC8zbS-LuweK1Z2WpnTOWT7uXo7tYvu3SsQ&s=10">
-                <h2>Croissant</h2>
-                <h2>17,99R$</h2>
+                <h2 class="producttext">Croissant</h2>
+                <h3 class="producttext">17,99R$</h3>
             </div>
             <div class="box">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7NWIcPGOWYMonUpUj9QoQGwM4212g2elmnLS0pDSjWQ&s=10">
+                <h2 class="producttext">Baguette</h2>
+                <h3 class="producttext">34,99R$</h3>
             </div>
             <div class="box">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf6XJ-zcvhIRQ-1iW7Ff1sGh26JKdyrCVPNKBYG0Y3wA&s=10">
+                <h2 class="producttext">Pão Frances</h2>
+                <h3 class="producttext">19,99R$</h3>
+            </div>
+        </div>
+
+        <div class="boxes spaced">
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz7uzwXTsKC8zbS-LuweK1Z2WpnTOWT7uXo7tYvu3SsQ&s=10">
+                <h2 class="producttext">Croissant</h2>
+                <h3 class="producttext">17,99R$</h3>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7NWIcPGOWYMonUpUj9QoQGwM4212g2elmnLS0pDSjWQ&s=10">
+                <h2 class="producttext">Baguette</h2>
+                <h3 class="producttext">34,99R$</h3>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf6XJ-zcvhIRQ-1iW7Ff1sGh26JKdyrCVPNKBYG0Y3wA&s=10">
+                <h2 class="producttext">Pão Frances</h2>
+                <h3 class="producttext">19,99R$</h3>
             </div>
         </div>
     </body>
