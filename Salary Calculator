@@ -30,23 +30,33 @@
             div {
                 text-align: start;
             }
+
+            #display1 {
+                color: red;
+                font-size: 18px
+            }
+
+            #display2 {
+                color: red;
+                font-size: 18px
+            }
         </style> 
     </head>
 
     <body>
-        <h1>Job Payment Calculator</h1>
+        <h1> Job Payment Calculator</h1>
         
         <div>
-            <h2>HOW MUCH YOU RECEIVE DURING A DAY</h2>
+            <h2> HOW MUCH YOU RECEIVE DURING A DAY</h2>
         </div>
 
         <div>
-            <h3>How much do you receive per Hour</h3>
+            <h3> How much do you receive per Hour</h3>
             <input id="perhour">
         </div>
         
         <div>
-            <h3>How many Hours do you Work</h3>
+            <h3> How many Hours do you Work</h3>
             <input id="hourwork">
         </div>
         
@@ -57,11 +67,15 @@
         </div>
 
         <div>
-            <h2>HOW MUCH YOU RECEIVE + EXTRA HOURS</h2>
+            <h2 id="display1"></h2>
         </div>
 
         <div>
-            <h3>How many Extra Hours do you Work</h3>
+            <h2> HOW MUCH YOU RECEIVE + EXTRA HOURS</h2>
+        </div>
+
+        <div>
+            <h3> How many Extra Hours do you Work</h3>
             <input id="hourwork2">
         </div>
 
@@ -69,6 +83,10 @@
             <p>
             </p>
             <button onclick="Result2()">Calculate</button>
+        </div>
+
+        <div>
+            <h2 id="display2"></h2>
         </div>
 
         <script>
@@ -81,7 +99,7 @@
 
     var totalperday = hoursofwork * moneyperhour;
                 
-        alert("If you work " + hoursofwork + " hours, receiving " + moneyperhour + " Reais per hour, in the end you will receive " + totalperday + " Reais.");
+        document.getElementById("display1").innerHTML = "After a whole day of work, you'll receive " + totalperday + " Reais.";
             }
         
         function Result2() {
@@ -100,8 +118,9 @@
 
     var extramoneytotal = extramoneyperhour + totalperday;
 
-        alert("After a whole day of work + extra hours, you'll receive " + extramoneytotal + " Reais.");
+        document.getElementById("display2").innerHTML = "After a whole day of work + extra hours, you'll receive " + extramoneytotal + " Reais.";
             }
+
         </script>
         
     </body>
